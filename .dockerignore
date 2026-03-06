@@ -12,7 +12,6 @@ __pycache__/
 *.xlsx
 *.pdf
 *.docx
-*.txt
 output/
 .streamlit/cache
 .pytest_cache/
