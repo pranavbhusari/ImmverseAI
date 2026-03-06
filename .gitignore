@@ -48,7 +48,8 @@ output/
 .DS_Store
 
 # Cache
-.streamlit/
+.streamlit/cache
+.streamlit/secrets.toml
 *.cache
 
 # Docker
