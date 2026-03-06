@@ -78,7 +78,26 @@ streamlit run app.py
 
 Open `http://localhost:8501` in your browser.
 
-## 📖 Usage
+## � Deployment
+
+### Option 1: Docker (Local Testing)
+```bash
+# Build and run locally
+docker-compose up --build
+```
+App runs at `http://localhost:8501`
+
+### Option 2: Deploy to Render (Production)
+See [RENDER_DEPLOYMENT.md](RENDER_DEPLOYMENT.md) for complete instructions:
+1. Push to GitHub
+2. Connect GitHub to Render
+3. Create Web Service with Docker
+4. Add GROQ_API_KEY environment variable
+5. Deploy! (takes ~5-10 minutes)
+
+**Deployed URL**: `https://immverse-ai.onrender.com` (example)
+
+## �📖 Usage
 
 1. **Upload Document** → Select PDF, DOCX, or TXT file
 2. **Configure** → Set number of questions (default: 3)
