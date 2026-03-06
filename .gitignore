@@ -54,7 +54,3 @@ output/
 # Docker
 .docker/
 docker-compose.override.yml
-RENDER_DEPLOYMENT.md
-docker-compose.yml
-Dockerfile
-.dockerignore

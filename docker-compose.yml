@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  immverse-ai:
+    build: .
+    container_name: immverse-ai
+    ports:
+      - "8501:8501"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - OUTPUT_DIR=/app/output
+    volumes:
+      - ./output:/app/output
+    stdin_open: true
+    tty: true
