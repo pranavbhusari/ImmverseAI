@@ -21,11 +21,8 @@ COPY translator.py .
 COPY document_parser.py .
 COPY excel_exporter.py .
 
-# Create .streamlit directory
+# Create .streamlit directory for config
 RUN mkdir -p .streamlit
-
-# Copy config if it exists
-COPY .streamlit/*.toml .streamlit/ || true
 
 # Expose port
 EXPOSE 8501
